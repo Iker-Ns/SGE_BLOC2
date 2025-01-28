@@ -1,4 +1,7 @@
-from create_registre import create_reg
+from read_registre import read_reg
 
-#Trucada per executar la funció a l'arxiu create_registre.py
-create_reg()
+results = read_reg()
+
+for result in results:
+    print(f"Nom: {result[0]}, Adreça: {result[1]}, Telèfon: {result[2]}, Email: '{result[3]}', Neixament: {result[4]}")
+    print("\n")
