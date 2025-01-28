@@ -1,26 +1,28 @@
-# Connection
+# 21/01/25 -> 28/01/25
+
+## Connection
 ![ConnectionToDb](imgs/connect_success.png)
 
 La imagen muestra que se ha podido establecer correctamente la conexión a la base de datos y está imprimiendo el estado del conector y la información como el usuario, el nombre de la base de datos, el puerto y si la conexión está abierta (0) o cerrada (1).
 
-# Inserción
+## Inserción
 ![Insert](imgs/insert/insert_data.png)
 
 La imagen muestra los datos que ha leído del [.CSV](send_data_to_db/Clientes.csv) previamente, y los ha insertado en la base de datos.
 
-# Crear Registro
+## Crear Registro
 ![Create](imgs/create/create_table_success.png)
 
 La imagen muestra que [create_registre.py](postgresql_python/create_registre.py) se ha ejecutado correctamente, y si vamos al PgAdmin podremos ver cómo se han creado correctamente.
 
 ![PgAdmin](imgs/create/create_pgadmin.png)
 
-# Leer Registro
+## Leer Registro
 ![Read](imgs/read/read_registre.png)
 
 La imagen muestra la información que hay en la tabla de Clientes.
 
-# Actualizar Registro
+## Actualizar Registro
 ![Actualizar](imgs/updates/update_registre.png)
 
 ![Before](imgs/updates/update_registre_before.png)
@@ -28,7 +30,7 @@ La imagen muestra la información que hay en la tabla de Clientes.
 
 Actualizamos el teléfono donde el nombre de cliente sea 'Roger'.
 
-## Otros Updates
+### Otros Updates
 ![Actualizar](imgs/updates/update_calle_juan_manuel.png)
 
 En esta imagen estamos actualizando la calle de cualquier cliente que se llame 'Juan Manuel'.
@@ -45,7 +47,7 @@ En esta imagen estamos actualizando el nombre de cualquier cliente que se llame 
 
 Y estos son los resultados después de hacer una Query en el PgAdmin.
 
-# Borrar Registro
+## Borrar Registro
 ![Borrar](imgs/delete/delete_registre.png)
 
 En esta imagen estamos borrando todos los clientes donde su nombre sean 'Roger'.
